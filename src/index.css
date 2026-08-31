@@ -1,0 +1,66 @@
+@import "tailwindcss";
+@config "../tailwind.config.js";
+
+@layer base {
+  body {
+    background-color: #F7F3EA;
+    color: #302C28;
+    font-family: 'Plus Jakarta Sans', Inter, system-ui, sans-serif;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  }
+
+  h1, h2, h3, h4, .font-serif {
+    font-family: 'Playfair Display', 'Cormorant Garamond', Georgia, serif;
+    letter-spacing: -0.01em;
+    color: #302C28;
+  }
+}
+
+/* Subtle Editorial Scrollbar */
+::-webkit-scrollbar {
+  width: 7px;
+}
+::-webkit-scrollbar-track {
+  background: #F7F3EA;
+}
+::-webkit-scrollbar-thumb {
+  background: #D2BE91;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #B49A6A;
+}
+
+/* Editorial subtle hover effects */
+.editorial-card {
+  background-color: #FFFDF8;
+  border: 1px solid #DED4C5;
+  transition: transform 0.28s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.28s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.28s ease;
+}
+
+.editorial-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 14px 28px -4px rgba(48, 44, 40, 0.06), 0 4px 10px -2px rgba(180, 154, 106, 0.05);
+  border-color: #B49A6A;
+}
+
+/* Subtle Gold Divider / Border Line */
+.gold-divider {
+  height: 1px;
+  background: linear-gradient(90deg, transparent 0%, #D2BE91 50%, transparent 100%);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.99);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.25s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
