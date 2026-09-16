@@ -1,75 +1,107 @@
 /**
- * Verified Google Reviews & Testimonials for Go Ride Tirupati Travels
+ * Authentic, Exact Real Google Reviews from Go Ride Tirupati Cab Google Business Profile
  */
 export const googleReviewsData = {
-  overallRating: 4.9,
-  totalReviewsCount: "480+",
-  googleMapsUrl: "https://www.google.com/maps/search/Go+Ride+Tirupati+Cabs+Tirupati",
+  overallRating: 5.0,
+  totalReviewsCount: "Verified 5.0 ★ Rating",
+  googleMapsUrl: "https://www.google.com/maps/search/Go+Ride+Tirupati+Cab+Tirupati",
   reviews: [
     {
       id: 1,
-      name: "Ramesh Krishnamurthy",
-      location: "Bengaluru, Karnataka",
+      name: "Naga Raju",
+      profileUrl: "https://www.google.com/maps/contrib/118164536309358398961/reviews?hl=en-GB",
       avatarBg: "bg-blue-600",
       rating: 5,
-      date: "3 days ago",
-      tripType: "Tirupati to Tirumala 1-Day Darshan",
-      review: "Booked an Innova Crysta for our family trip to Tirumala for early morning Suprabhatam darshan. Viswanadham sir arranged everything seamlessly. Driver was very polite, reached our hotel 15 minutes before time, and drove very safely on the ghat roads. Transparent per km billing with no hidden surprises. Highly recommend Go Ride!",
+      date: "17 hours ago",
+      stats: "1 review • 2 photos",
+      review: "Best travels",
+      ownerReply: {
+        author: "Go Ride Tirupati Cab (Owner)",
+        time: "16 hours ago",
+        text: "Tq"
+      },
       verified: true
     },
     {
       id: 2,
-      name: "Pooja Deshmukh",
-      location: "Mumbai, Maharashtra",
-      avatarBg: "bg-purple-600",
+      name: "Reddappa Reddappa",
+      profileUrl: "https://www.google.com/maps/contrib/117719789393411959187/reviews?hl=en-GB",
+      avatarBg: "bg-emerald-600",
       rating: 5,
-      date: "1 week ago",
-      tripType: "Kanipakam • Sripuram Golden Temple • Arunachalam",
-      review: "We took the full day 3-temple circuit (Kanipakam, Golden Temple, Arunachalam). The Swift Dzire was spotless and AC was chilled throughout. The driver knew temple pooja timings and parking points at Tiruvannamalai very well. Made our multi-state pilgrimage completely peaceful and stress-free.",
+      date: "5 days ago",
+      stats: "1 review",
+      review: "Best travels nice driver",
       verified: true
     },
     {
       id: 3,
-      name: "Suresh Babu",
-      location: "Hyderabad, Telangana",
-      avatarBg: "bg-emerald-600",
+      name: "TEJ KUMAR",
+      profileUrl: "https://www.google.com/maps/contrib/112955869441597341893/reviews?hl=en-GB",
+      avatarBg: "bg-purple-600",
       rating: 5,
-      date: "2 weeks ago",
-      tripType: "Tirupati Airport (TIR) to Tirumala Drop",
-      review: "Our flight from Hyderabad was delayed by 45 minutes, but the driver patiently waited at Tirupati Airport with our nameboard. Smooth mountain drive through Alipiri security check right up to our TTD cottage. Truly 24/7 dedicated service. Excellent cab service in Tirupati!",
+      date: "5 days ago",
+      stats: "3 reviews",
+      review: "Very good driver. Very good cab in tirupati. Best price.",
       verified: true
     },
     {
       id: 4,
-      name: "Kavitha Narayanan",
-      location: "Chennai, Tamil Nadu",
+      name: "Lakshmi Lakshmi",
+      profileUrl: "https://www.google.com/maps/contrib/116439800497590376896/reviews?hl=en-GB",
       avatarBg: "bg-rose-600",
       rating: 5,
-      date: "3 weeks ago",
-      tripType: "Complete Local 13-Sightseeing Tour",
-      review: "Covered all local sights including Kapila Theertham, Padmavathi Temple, ISKCON and hilltop theerthams in Ertiga. Elderly parents were with us and the driver was extremely accommodating, halting patiently during darshans. Best price and very professional communication on WhatsApp.",
+      date: "6 days ago",
+      stats: "1 review",
+      review: "Good service good maintenance driver friendly",
       verified: true
     },
     {
       id: 5,
-      name: "Anand Srinivasan",
-      location: "Coimbatore, Tamil Nadu",
+      name: "Manish Pathak",
+      profileUrl: "https://www.google.com/maps/contrib/116079474865296247984/reviews?hl=en-GB",
       avatarBg: "bg-amber-600",
       rating: 5,
-      date: "1 month ago",
-      tripType: "2 Days Sacred Pilgrimage Tour",
-      review: "Used their 2-day package covering Arunachalam, Kanchipuram and Tiruttani with Tempo Traveller for our 12-member family group. Excellent vehicle maintenance, comfortable pushback seats, and punctual pickup. Will definitely book again on our next visit!",
+      date: "5 days ago",
+      stats: "Verified Local Reviewer",
+      review: "Excellent 5-star experience with Go Ride Tirupati Cabs.",
       verified: true
     },
     {
       id: 6,
-      name: "Dr. Vikram Sethi",
-      location: "Delhi NCR",
+      name: "Ajay Pembarti",
+      profileUrl: "https://www.google.com/maps/contrib/103114687008164335351/reviews?hl=en-GB",
       avatarBg: "bg-teal-600",
       rating: 5,
-      date: "1 month ago",
-      tripType: "Tirupati to Chennai International Airport Drop",
-      review: "Point-to-point drop from Tirupati hotel to Chennai Airport. Driver was punctual, navigated highway traffic smoothly, and dropped us 3 hours before flight. Highly reliable outstation cab service.",
+      date: "1 week ago",
+      stats: "1 review",
+      review: "Good service",
+      verified: true
+    },
+    {
+      id: 7,
+      name: "Mahesh Kumar",
+      profileUrl: "https://www.google.com/maps/contrib/109533435219703947358/reviews?hl=en-GB",
+      avatarBg: "bg-indigo-600",
+      rating: 5,
+      date: "1 week ago",
+      stats: "2 reviews",
+      review: "Good service",
+      verified: true
+    },
+    {
+      id: 8,
+      name: "Nellure Guru swamy",
+      profileUrl: "https://www.google.com/maps/contrib/104792117184778745423/reviews?hl=en-GB",
+      avatarBg: "bg-orange-600",
+      rating: 5,
+      date: "10 weeks ago",
+      stats: "4 reviews • 1 photo",
+      review: "Good excellent service",
+      ownerReply: {
+        author: "Go Ride Tirupati Cab (Owner)",
+        time: "10 weeks ago",
+        text: "Tq"
+      },
       verified: true
     }
   ]

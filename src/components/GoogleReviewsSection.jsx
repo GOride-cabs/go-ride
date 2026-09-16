@@ -1,22 +1,9 @@
-import React, { useState } from 'react';
-import { Star, CheckCircle, MessageCircle, ExternalLink, ShieldCheck, ThumbsUp } from 'lucide-react';
+import React from 'react';
+import { Star, CheckCircle, MessageCircle, ExternalLink, ShieldCheck, ThumbsUp, CornerDownRight } from 'lucide-react';
 import { googleReviewsData } from '../data/reviews';
 import { contactConfig } from '../config/contact';
 
 export default function GoogleReviewsSection() {
-  const [filter, setFilter] = useState('All');
-
-  const filterCategories = ['All', 'Tirumala Darshan', 'Outstation & Circuits', 'Airport Transfers'];
-
-  const filteredReviews = filter === 'All' 
-    ? googleReviewsData.reviews 
-    : googleReviewsData.reviews.filter(r => {
-        if (filter === 'Tirumala Darshan') return r.tripType.includes('Tirumala');
-        if (filter === 'Outstation & Circuits') return r.tripType.includes('Arunachalam') || r.tripType.includes('Pilgrimage') || r.tripType.includes('Sightseeing');
-        if (filter === 'Airport Transfers') return r.tripType.includes('Airport');
-        return true;
-      });
-
   return (
     <section className="py-20 sm:py-24 bg-ivory-200/40 border-t border-warmBorder relative overflow-hidden">
       
@@ -44,7 +31,7 @@ export default function GoogleReviewsSection() {
             <div className="space-y-1">
               <div className="flex items-center justify-center sm:justify-start space-x-2">
                 <span className="font-serif text-3xl font-extrabold text-charcoal">
-                  {googleReviewsData.overallRating}
+                  5.0
                 </span>
                 <div className="flex items-center text-amber-500">
                   {[...Array(5)].map((_, i) => (
@@ -52,15 +39,15 @@ export default function GoogleReviewsSection() {
                   ))}
                 </div>
                 <span className="text-xs font-bold px-2 py-0.5 rounded bg-emerald-100 text-emerald-800 uppercase tracking-wider">
-                  EXCELLENT
+                  ALL 5-STAR
                 </span>
               </div>
 
               <h2 className="font-serif text-xl sm:text-2xl font-bold text-charcoal">
-                Google Customer Reviews
+                Google Business Reviews
               </h2>
               <p className="text-xs text-charcoal-muted">
-                Based on <strong className="text-charcoal">{googleReviewsData.totalReviewsCount} verified devotee reviews</strong> across Andhra Pradesh &amp; Tamil Nadu.
+                Direct customer feedback from our <strong className="text-charcoal">Google Maps business profile</strong>.
               </p>
             </div>
 
@@ -88,50 +75,39 @@ export default function GoogleReviewsSection() {
 
         </div>
 
-        {/* Category Filter Pills */}
-        <div className="flex items-center justify-center space-x-2 sm:space-x-3 mb-10 overflow-x-auto pb-2">
-          {filterCategories.map((cat) => (
-            <button
-              key={cat}
-              onClick={() => setFilter(cat)}
-              className={`px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider transition-all cursor-pointer whitespace-nowrap shadow-sm border ${
-                filter === cat
-                  ? 'bg-charcoal text-white border-charcoal'
-                  : 'bg-white text-charcoal-muted border-warmBorder hover:border-gold hover:text-charcoal'
-              }`}
-            >
-              {cat}
-            </button>
-          ))}
-        </div>
-
-        {/* Reviews Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 mb-12">
-          {filteredReviews.map((rev) => (
+        {/* Real Reviews Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 sm:gap-6 mb-12">
+          {googleReviewsData.reviews.map((rev) => (
             <div
               key={rev.id}
-              className="bg-card rounded-3xl p-6 sm:p-7 border border-warmBorder shadow-editorial hover:shadow-editorial-hover transition-all duration-300 flex flex-col justify-between group hover:border-gold"
+              className="bg-card rounded-3xl p-5 sm:p-6 border border-warmBorder shadow-editorial hover:shadow-editorial-hover transition-all duration-300 flex flex-col justify-between group hover:border-gold"
             >
-              <div className="space-y-4">
+              <div className="space-y-3">
                 
-                {/* User Header */}
+                {/* User Header with Contributor Link */}
                 <div className="flex items-start justify-between">
-                  <div className="flex items-center space-x-3">
-                    <div className={`w-11 h-11 rounded-full ${rev.avatarBg} text-white font-bold flex items-center justify-center text-sm shadow-sm`}>
+                  <div className="flex items-center space-x-2.5">
+                    <div className={`w-10 h-10 rounded-full ${rev.avatarBg} text-white font-bold flex items-center justify-center text-xs shadow-sm shrink-0`}>
                       {rev.name.charAt(0)}
                     </div>
                     <div>
-                      <h3 className="font-serif font-bold text-sm sm:text-base text-charcoal">
-                        {rev.name}
-                      </h3>
-                      <span className="text-[11px] text-charcoal-muted block">
-                        {rev.location}
+                      <a
+                        href={rev.profileUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="font-serif font-bold text-sm text-charcoal hover:text-maroon-accent transition-colors flex items-center gap-1 group/name"
+                      >
+                        <span>{rev.name}</span>
+                        <ExternalLink className="w-3 h-3 opacity-0 group-hover/name:opacity-100 transition-opacity text-gold-dark" />
+                      </a>
+                      <span className="text-[10px] text-charcoal-muted block">
+                        {rev.stats}
                       </span>
                     </div>
                   </div>
 
                   {/* Google Logo Mini */}
-                  <div className="w-5 h-5 opacity-90">
+                  <div className="w-4 h-4 shrink-0 opacity-90">
                     <svg viewBox="0 0 24 24">
                       <path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" />
                       <path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" />
@@ -141,40 +117,48 @@ export default function GoogleReviewsSection() {
                   </div>
                 </div>
 
-                {/* Stars & Trip Tag */}
-                <div className="space-y-1.5">
-                  <div className="flex items-center space-x-2">
-                    <div className="flex items-center text-amber-500">
-                      {[...Array(rev.rating)].map((_, i) => (
-                        <Star key={i} className="w-4 h-4 fill-current" />
-                      ))}
-                    </div>
-                    <span className="text-[10px] text-charcoal-muted">
-                      {rev.date}
-                    </span>
+                {/* Stars & Date */}
+                <div className="flex items-center space-x-2">
+                  <div className="flex items-center text-amber-500">
+                    {[...Array(rev.rating)].map((_, i) => (
+                      <Star key={i} className="w-3.5 h-3.5 fill-current" />
+                    ))}
                   </div>
-
-                  <span className="inline-block px-2.5 py-1 bg-ivory rounded-md text-[10px] font-bold text-gold-dark border border-warmBorder/60">
-                    📍 {rev.tripType}
+                  <span className="text-[10px] text-charcoal-muted">
+                    {rev.date}
                   </span>
                 </div>
 
                 {/* Review Body */}
-                <p className="text-xs text-charcoal-muted leading-relaxed italic">
+                <p className="text-xs text-charcoal leading-relaxed font-medium">
                   "{rev.review}"
                 </p>
+
+                {/* Real Owner Reply if present */}
+                {rev.ownerReply && (
+                  <div className="p-2.5 bg-ivory rounded-xl border border-warmBorder/70 text-[11px] space-y-0.5 mt-2">
+                    <div className="flex items-center space-x-1 text-gold-dark font-bold">
+                      <CornerDownRight className="w-3 h-3" />
+                      <span>{rev.ownerReply.author}</span>
+                      <span className="text-[9px] text-charcoal-muted font-normal">• {rev.ownerReply.time}</span>
+                    </div>
+                    <p className="text-charcoal pl-4 text-xs font-semibold">
+                      "{rev.ownerReply.text}"
+                    </p>
+                  </div>
+                )}
 
               </div>
 
               {/* Verified Badge Footer */}
-              <div className="pt-4 mt-4 border-t border-warmBorder/60 flex items-center justify-between text-[11px] text-emerald-700 font-semibold">
+              <div className="pt-3 mt-3 border-t border-warmBorder/60 flex items-center justify-between text-[10px] text-emerald-700 font-semibold">
                 <div className="flex items-center space-x-1">
-                  <CheckCircle className="w-3.5 h-3.5" />
-                  <span>Verified Google Review</span>
+                  <CheckCircle className="w-3 h-3" />
+                  <span>Verified Review</span>
                 </div>
                 <div className="flex items-center space-x-1 text-charcoal-muted text-[10px]">
                   <ThumbsUp className="w-3 h-3" />
-                  <span>Helpful</span>
+                  <span>Google</span>
                 </div>
               </div>
 
@@ -185,7 +169,7 @@ export default function GoogleReviewsSection() {
         {/* Bottom Trust Badge Ribbon */}
         <div className="bg-white rounded-2xl p-4 border border-warmBorder shadow-xs max-w-2xl mx-auto text-center flex items-center justify-center space-x-3 text-xs text-charcoal">
           <ShieldCheck className="w-5 h-5 text-gold shrink-0" />
-          <span>100% Genuine Pilgrim Reviews • Verified Google Business Profile</span>
+          <span>Real Customer Feedback from Google Maps • Go Ride Tirupati Cab</span>
         </div>
 
       </div>
