@@ -10,23 +10,23 @@ export default function About({ onOpenBooking }) {
   return (
     <div className="pt-24 pb-16 bg-ivory min-h-screen">
       <SEOHead
-        title="About Go Ride Tirupati Travels | Premier 24/7 Tirupati Cab Service"
-        description="Learn about Go Ride Tirupati Travels. Founded by N Viswanadham to provide punctual, transparent, and certified pilgrimage cab services across Tirumala and Tirupati. Call +91 85009 53558."
+        title="Go Ride Tirupati Travels | Best Travels & Taxi Operator in Tirupati"
+        description="Go Ride Tirupati Travels is a trusted local travel agency and cab operator in Tirupati managed by N Viswanadham. 24/7 Tirumala darshan cabs, pilgrimage tour packages, airport pickups & outstation travel from ₹14/km. Call +91 85009 53558."
         canonicalUrl="https://www.goridetirupatitravels.in/about"
-        keywords="About Go Ride Tirupati, Tirupati Cab Company, N Viswanadham Travels, Best Taxi Operator Tirupati"
+        keywords="best travels in Tirupati, Tirupati travels, Go Ride Tirupati Travels, Tirupati travel agency, Tirupati tour operator, N Viswanadham travels, Tirupati Cab Company"
       />
       
       {/* Header Section */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 text-center">
         <div className="inline-flex items-center space-x-2 px-3.5 py-1.5 rounded-full bg-ivory-200 border border-warmBorder text-charcoal text-xs font-bold tracking-widest uppercase mb-3 shadow-sm">
           <Sparkles className="w-3.5 h-3.5 text-gold" />
-          <span>ABOUT GO RIDE TIRUPATI CABS</span>
+          <span>ABOUT GO RIDE TIRUPATI TRAVELS</span>
         </div>
-        <h1 className="font-serif text-4xl sm:text-5xl lg:text-6xl font-bold text-charcoal tracking-tight mb-4 max-w-4xl mx-auto">
-          {siteContent.aboutPage.heroHeading}
+        <h1 className="font-serif text-3xl sm:text-5xl lg:text-6xl font-bold text-charcoal tracking-tight mb-4 max-w-4xl mx-auto">
+          Go Ride Tirupati Travels — Trusted Pilgrimage &amp; Cab Operator
         </h1>
         <p className="max-w-2xl mx-auto text-sm sm:text-base text-charcoal-muted leading-relaxed">
-          {siteContent.aboutPage.subheading}
+          Founded and managed by N Viswanadham, Go Ride Tirupati Travels is dedicated to providing transparent, punctual, and safe cab services for devotees and travelers across South India.
         </p>
       </div>
 
