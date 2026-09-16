@@ -27,11 +27,12 @@ export default function Navbar({ onOpenBooking }) {
 
   const navLinks = [
     { name: 'Home', path: '/' },
+    { name: 'Services', path: '/services' },
     { name: 'Tour Packages', path: '/packages' },
     { name: 'Local Sightseeing', path: '/sightseeing' },
-    { name: 'Our Vehicles', path: '/vehicles' },
+    { name: 'Vehicles', path: '/vehicles' },
     { name: 'About Us', path: '/about' },
-    { name: 'Contact Desk', path: '/contact' },
+    { name: 'Contact', path: '/contact' },
   ];
 
   return (

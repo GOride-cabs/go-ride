@@ -6,6 +6,7 @@ import WhatsAppFloat from './components/WhatsAppFloat';
 import MobileBottomBar from './components/MobileBottomBar';
 import BookingModal from './components/BookingModal';
 import Home from './pages/Home';
+import ServicesHub from './pages/ServicesHub';
 import Packages from './pages/Packages';
 import PackageDetails from './pages/PackageDetails';
 import Vehicles from './pages/Vehicles';
@@ -66,6 +67,10 @@ export default function App() {
               }
             />
             <Route
+              path="/services"
+              element={<ServicesHub onOpenBooking={handleOpenBooking} />}
+            />
+            <Route
               path="/packages"
               element={<Packages onOpenBooking={handleOpenBooking} />}
             />
@@ -104,7 +109,7 @@ export default function App() {
         {/* Global Footer */}
         <Footer />
 
-        {/* Desktop Floating WhatsApp Button (hidden on mobile to avoid overlapping bottom bar) */}
+        {/* Desktop Floating WhatsApp Button */}
         <div className="hidden sm:block">
           <WhatsAppFloat />
         </div>

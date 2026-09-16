@@ -1,0 +1,4 @@
+# robots.txt for Go Ride Tirupati Cabs (https://goridetirupaticab.com)
+User-agent: *
+Allow: /
+Sitemap: https://goridetirupaticab.com/sitemap.xml
