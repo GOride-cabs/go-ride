@@ -2,6 +2,7 @@ import React from 'react';
 import { Sparkles, CheckCircle2 } from 'lucide-react';
 import { siteContent } from '../data/siteContent';
 import WhyChooseUs from '../components/WhyChooseUs';
+import GoogleReviewsSection from '../components/GoogleReviewsSection';
 import CTASection from '../components/CTASection';
 
 export default function About({ onOpenBooking }) {
@@ -87,6 +88,9 @@ export default function About({ onOpenBooking }) {
 
       {/* Why Choose Us Standard */}
       <WhyChooseUs />
+
+      {/* Verified Google Reviews */}
+      <GoogleReviewsSection />
 
       {/* Bottom CTA */}
       <div className="mt-16">

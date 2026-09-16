@@ -6,6 +6,7 @@ import PopularRoutesSection from '../components/PopularRoutesSection';
 import ServicesSection from '../components/ServicesSection';
 import BookingProcessSection from '../components/BookingProcessSection';
 import WhyChooseUs from '../components/WhyChooseUs';
+import GoogleReviewsSection from '../components/GoogleReviewsSection';
 import FAQSection from '../components/FAQSection';
 import BookingForm from '../components/BookingForm';
 import CTASection from '../components/CTASection';
@@ -47,10 +48,13 @@ export default function Home({ onOpenBooking }) {
       {/* 7. Why Choose Go Ride Tirupati Cab: Core Benefits */}
       <WhyChooseUs />
 
-      {/* 8. Comprehensive FAQ Accordions (10 Questions from Old Website) */}
+      {/* 8. Verified Google Reviews & Customer Feedback */}
+      <GoogleReviewsSection />
+
+      {/* 9. Comprehensive FAQ Accordions */}
       <FAQSection />
 
-      {/* 9. Direct Online Booking & Enquiry Form */}
+      {/* 10. Direct Online Booking & Enquiry Form */}
       <section id="booking-section" className="py-20 sm:py-24 bg-ivory-200/50 border-t border-warmBorder">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
@@ -58,10 +62,10 @@ export default function Home({ onOpenBooking }) {
               ONLINE RESERVATION DESK
             </span>
             <h2 className="font-serif text-3xl sm:text-4xl font-bold text-charcoal">
-              Book Your Tirupati Cab
+              Book Your Cab in Tirupati
             </h2>
-            <p className="text-xs sm:text-sm text-charcoal-muted mt-2">
-              Fill in your pickup, date, and destination. N Viswanadham (+91 85009 53558) will confirm your driver and vehicle details.
+            <p className="text-sm text-charcoal-muted mt-2">
+              Get transparent quotes and fast confirmation from N Viswanadham (+91 85009 53558).
             </p>
           </div>
 
@@ -71,8 +75,10 @@ export default function Home({ onOpenBooking }) {
         </div>
       </section>
 
-      {/* 10. Final CTA Section */}
-      <CTASection onOpenBooking={() => onOpenBooking()} />
+      {/* 11. Final High-Converting Bottom Action Banner */}
+      <CTASection
+        onOpenBooking={() => onOpenBooking()}
+      />
 
     </div>
   );
