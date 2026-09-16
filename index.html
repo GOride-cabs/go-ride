@@ -49,8 +49,8 @@
       "@context": "https://schema.org",
       "@graph": [
         {
-          "@type": "TaxiService",
-          "@id": "https://www.goridetirupatitravels.in/#taxiservice",
+          "@type": ["LocalBusiness", "TravelAgency", "TaxiService"],
+          "@id": "https://www.goridetirupatitravels.in/#localbusiness",
           "name": "Go Ride Tirupati Travels",
           "alternateName": ["Go Ride Tirupati Cabs", "Go Ride Taxi Service Tirupati", "Go Ride Tirumala Cabs"],
           "url": "https://www.goridetirupatitravels.in/",
@@ -102,6 +102,64 @@
             "bestRating": "5",
             "worstRating": "1"
           },
+          "review": [
+            {
+              "@type": "Review",
+              "author": {
+                "@type": "Person",
+                "name": "Naga Raju"
+              },
+              "datePublished": "2026-09-15",
+              "reviewBody": "Best travels in Tirupati. Friendly driver and clean car.",
+              "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "5",
+                "bestRating": "5"
+              }
+            },
+            {
+              "@type": "Review",
+              "author": {
+                "@type": "Person",
+                "name": "Reddappa Reddappa"
+              },
+              "datePublished": "2026-09-11",
+              "reviewBody": "Best travels, nice driver and comfortable journey to Tirumala.",
+              "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "5",
+                "bestRating": "5"
+              }
+            },
+            {
+              "@type": "Review",
+              "author": {
+                "@type": "Person",
+                "name": "TEJ KUMAR"
+              },
+              "datePublished": "2026-09-11",
+              "reviewBody": "Very good driver, very good cab in Tirupati, best price.",
+              "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "5",
+                "bestRating": "5"
+              }
+            },
+            {
+              "@type": "Review",
+              "author": {
+                "@type": "Person",
+                "name": "Lakshmi Lakshmi"
+              },
+              "datePublished": "2026-09-10",
+              "reviewBody": "Good service, good maintenance, driver friendly.",
+              "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "5",
+                "bestRating": "5"
+              }
+            }
+          ],
           "hasOfferCatalog": {
             "@type": "OfferCatalog",
             "name": "Tirupati Cab & Taxi Services",
