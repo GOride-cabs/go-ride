@@ -20,7 +20,7 @@ export default function PopularRoutesSection({ onOpenBooking }) {
       distance: "18 km from city",
       time: "30 mins",
       desc: "Doorstep pickup and drop for all scheduled IndiGo, SpiceJet & Air India flights with delay buffer.",
-      image: "/images/temples/padmavathi-temple.jpg"
+      image: "/images/temples/padmavathi-temple.webp"
     },
     {
       id: "chennai",
@@ -29,7 +29,7 @@ export default function PopularRoutesSection({ onOpenBooking }) {
       distance: "135 km (One-way / Return)",
       time: "3.5 hours",
       desc: "Direct point-to-point drop to Chennai International Airport (MAA), Chennai Central, Egmore, or city.",
-      image: "/images/temples/kanchipuram-temple.jpg"
+      image: "/images/temples/kanchipuram-temple.webp"
     },
     {
       id: "vellore-cmc",
@@ -38,7 +38,7 @@ export default function PopularRoutesSection({ onOpenBooking }) {
       distance: "105 km",
       time: "2.5 hours",
       desc: "Comfortable private cabs for CMC Hospital appointments and Sri Lakshmi Narayani Golden Temple visits.",
-      image: "/images/temples/golden-temple-vellore.jpg"
+      image: "/images/temples/golden-temple-vellore.webp"
     },
     {
       id: "bangalore",
@@ -56,7 +56,7 @@ export default function PopularRoutesSection({ onOpenBooking }) {
       distance: "115 km – 240 km",
       time: "Full Day",
       desc: "Scenic South Indian heritage tours covering the Silk City temples and French Quarter promenades.",
-      image: "/images/temples/tiruttani-temple.jpg"
+      image: "/images/temples/tiruttani-temple.webp"
     }
   ];
 
@@ -68,10 +68,10 @@ export default function PopularRoutesSection({ onOpenBooking }) {
         <div className="text-center max-w-3xl mx-auto mb-14">
           <div className="inline-flex items-center space-x-2 px-3.5 py-1.5 rounded-full bg-ivory-200 border border-warmBorder text-charcoal text-xs font-bold tracking-widest uppercase mb-3 shadow-sm">
             <Navigation className="w-3.5 h-3.5 text-gold" />
-            <span>POPULAR DESTINATIONS & DROPS</span>
+            <span>Outstation & Transfers</span>
           </div>
-          <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-charcoal tracking-tight">
-            Popular Outstation & Airport Routes
+          <h2 className="font-serif text-3xl sm:text-4xl font-bold text-charcoal">
+            Popular Cab Routes from Tirupati
           </h2>
           <p className="text-sm sm:text-base text-charcoal-muted mt-2">
             One-way drops and round-trip taxi services operating daily from Tirupati.
@@ -91,8 +91,11 @@ export default function PopularRoutesSection({ onOpenBooking }) {
                   <img
                     src={route.image}
                     alt={route.title}
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out"
+                    width="400"
+                    height="192"
                     loading="lazy"
+                    decoding="async"
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent" />
 

@@ -17,7 +17,7 @@ export default function PackagesSection({ onBookPackage }) {
         deity: "Sri Varasiddhi Vinayaka",
         location: "Chittoor (70 km from Tirupati)",
         desc: "Swayambhu idol of Lord Ganesha growing inside the holy well.",
-        image: "/images/temples/Galipgopuram_of_Kanipakam_temple_(May_2019)_4.jpg",
+        image: "/images/temples/Galipgopuram_of_Kanipakam_temple_(May_2019)_4.webp",
         highlight: "Obstacle Remover Pooja"
       },
       {
@@ -26,7 +26,7 @@ export default function PackagesSection({ onBookPackage }) {
         deity: "Sri Lakshmi Narayani",
         location: "Sripuram, Vellore (65 km from Kanipakam)",
         desc: "Architectural wonder crafted with 1.5 tonnes of pure gold foil.",
-        image: "/images/temples/golden-temple-vellore.jpg",
+        image: "/images/temples/golden-temple-vellore.webp",
         highlight: "Star Path Spiritual Walk"
       },
       {
@@ -101,6 +101,10 @@ export default function PackagesSection({ onBookPackage }) {
                     <img
                       src={triTempleData.temples[0].image}
                       alt={triTempleData.temples[0].name}
+                      width="400"
+                      height="208"
+                      loading="lazy"
+                      decoding="async"
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/95 via-black/35 to-transparent" />
@@ -167,6 +171,10 @@ export default function PackagesSection({ onBookPackage }) {
                     <img
                       src={triTempleData.temples[1].image}
                       alt={triTempleData.temples[1].name}
+                      width="400"
+                      height="208"
+                      loading="lazy"
+                      decoding="async"
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/95 via-black/35 to-transparent" />
@@ -200,7 +208,7 @@ export default function PackagesSection({ onBookPackage }) {
 
                 <div className="p-4 pt-0">
                   <span className="text-[10px] font-bold text-maroon-accent uppercase block pt-2 border-t border-warmBorder/60">
-                    Stop 2: Star Path Walk
+                    Stop 2: Gold Sanctum
                   </span>
                 </div>
               </div>
@@ -233,6 +241,10 @@ export default function PackagesSection({ onBookPackage }) {
                     <img
                       src={triTempleData.temples[2].image}
                       alt={triTempleData.temples[2].name}
+                      width="400"
+                      height="208"
+                      loading="lazy"
+                      decoding="async"
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/95 via-black/35 to-transparent" />
@@ -310,8 +322,11 @@ export default function PackagesSection({ onBookPackage }) {
                   <img
                     src={pkg.image}
                     alt={pkg.title}
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out"
+                    width="400"
+                    height="208"
                     loading="lazy"
+                    decoding="async"
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent" />
 

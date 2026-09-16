@@ -50,6 +50,10 @@ export default function PackageDetails({ onOpenBooking }) {
           <img
             src={pkg.image || "/images/temples/Tirumala-Tour-Packages-from-Hyderabad.webp"}
             alt={pkg.title}
+            width="1200"
+            height="384"
+            fetchpriority="high"
+            decoding="async"
             className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black/95 via-black/50 to-black/20" />

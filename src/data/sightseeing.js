@@ -121,7 +121,7 @@ export const sightseeingPlaces = [
     name: "Sri Padmavathi Ammavari Temple – Tiruchanoor",
     category: "Tirupati Valley",
     tagline: "Divine Abode of Goddess Lakshmi (Alamelu Manga)",
-    image: "/images/temples/padmavathi-temple.jpg",
+    image: "/images/temples/padmavathi-temple.webp",
     timings: "5:00 AM – 9:00 PM",
     location: "Tiruchanur (5 km from Tirupati)",
     desc: "The primary shrine of Goddess Padmavathi Ammavaru. Pilgrimage tradition holds that visiting Tirumala is complete only after seeking Ammavari's blessings.",

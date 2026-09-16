@@ -149,7 +149,7 @@ export const packages = [
     category: "1 Day Circuit",
     duration: "1 Day Full Day Trip",
     distance: "Approx. 380 km Round Trip",
-    image: "/images/temples/golden-temple-vellore.jpg",
+    image: "/images/temples/golden-temple-vellore.webp",
     tagline: "Swayambhu Vinayaka • Sripuram Golden Temple • Shiva Agni Sthalam",
     overview: "An auspicious full-day pilgrimage connecting the three most powerful shrines across Andhra Pradesh and Tamil Nadu: Lord Varasiddhi Vinayaka at Kanipakam, Sri Lakshmi Narayani Golden Temple at Sripuram (Vellore), and Lord Arunachaleswarar at Tiruvannamalai.",
     vehicleRates: [
@@ -210,7 +210,7 @@ export const packages = [
     category: "1 Day Local",
     duration: "1 Day Tour (Approx. 6-7 hours)",
     distance: "Approx. 45 km Circuit",
-    image: "/images/temples/padmavathi-temple.jpg",
+    image: "/images/temples/padmavathi-temple.webp",
     tagline: "Padmavati • Srinivasa Mangapuram • ISKCON • Kapila Theertham • Govindaraja Swamy",
     overview: "Comprehensive 5-temple local darshan circuit covering Goddess Padmavathi Ammavari and major historic shrines of the holy Tirupati valley. A must-visit itinerary for every devotee visiting Tirupati.",
     vehicleRates: [
@@ -311,7 +311,7 @@ export const packages = [
     category: "1 Day Individual",
     duration: "Half Day Tour (Approx. 4-5 hours)",
     distance: "38 km (approx. 45 mins each way)",
-    image: "/images/temples/kalahastri.jpg",
+    image: "/images/temples/kalahastri.webp",
     tagline: "Sri Kalahasteeswara Temple • Rahu Ketu Sarpa Dosha Poojas",
     overview: "Sacred trip to the revered Pancha Bhoota Vayu Lingam and Rahu-Ketu Sarpa Dosha Nivarana pooja temple on the banks of holy river Swarnamukhi.",
     vehicleRates: [
@@ -364,7 +364,7 @@ export const packages = [
     category: "1 Day Individual",
     duration: "1 Day Tour (Approx. 10 hours)",
     distance: "Approx. 220 km Round Trip",
-    image: "/images/temples/kanchipuram-temple.jpg",
+    image: "/images/temples/kanchipuram-temple.webp",
     tagline: "City of Thousand Temples & Lord Murugan's 5th Abode",
     overview: "Direct comfortable cab trips to Kanchipuram (Kamakshi Amman, Ekambareswarar, and silk weaving centers) and Lord Murugan's holy hill temple at Tiruttani.",
     vehicleRates: [

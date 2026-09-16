@@ -60,12 +60,16 @@ export default function Hero({ onOpenBooking }) {
         {/* 3-Card Sacred Journey Mosaic */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8 max-w-6xl mx-auto mb-12">
           
-          {/* Card 1: Tirumala */}
+          {/* Card 1: Tirumala (LCP Element) */}
           <div className="rounded-3xl overflow-hidden border border-warmBorder bg-card hover:border-gold shadow-editorial hover:shadow-editorial-hover transition-all duration-300 flex flex-col justify-between group">
             <div className="relative h-64 sm:h-72 overflow-hidden bg-charcoal">
               <img
                 src="/images/temples/Tirumala-Tour-Packages-from-Hyderabad.webp"
                 alt="Tirumala Darshan"
+                width="600"
+                height="400"
+                fetchpriority="high"
+                decoding="async"
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/95 via-black/40 to-transparent" />
@@ -123,7 +127,15 @@ export default function Hero({ onOpenBooking }) {
                 {/* Temple 1: Kanipakam */}
                 <div className="flex-1 text-center">
                   <div className="relative h-28 rounded-xl overflow-hidden border border-white/20 shadow-sm">
-                    <img src="/images/temples/Galipgopuram_of_Kanipakam_temple_(May_2019)_4.jpg" alt="Kanipakam" className="w-full h-full object-cover" />
+                    <img
+                      src="/images/temples/Galipgopuram_of_Kanipakam_temple_(May_2019)_4.webp"
+                      alt="Kanipakam"
+                      width="200"
+                      height="150"
+                      loading="lazy"
+                      decoding="async"
+                      className="w-full h-full object-cover"
+                    />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/90 to-transparent" />
                     <span className="absolute bottom-1 left-1 right-1 text-[9px] font-bold text-white leading-tight truncate">
                       1. Kanipakam
@@ -142,7 +154,15 @@ export default function Hero({ onOpenBooking }) {
                 {/* Temple 2: Golden Temple */}
                 <div className="flex-1 text-center">
                   <div className="relative h-28 rounded-xl overflow-hidden border border-white/20 shadow-sm">
-                    <img src="/images/temples/golden-temple-vellore.jpg" alt="Golden Temple" className="w-full h-full object-cover" />
+                    <img
+                      src="/images/temples/golden-temple-vellore.webp"
+                      alt="Golden Temple"
+                      width="200"
+                      height="150"
+                      loading="lazy"
+                      decoding="async"
+                      className="w-full h-full object-cover"
+                    />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/90 to-transparent" />
                     <span className="absolute bottom-1 left-1 right-1 text-[9px] font-bold text-white leading-tight truncate">
                       2. Vellore
@@ -161,7 +181,15 @@ export default function Hero({ onOpenBooking }) {
                 {/* Temple 3: Arunachalam */}
                 <div className="flex-1 text-center">
                   <div className="relative h-28 rounded-xl overflow-hidden border border-white/20 shadow-sm">
-                    <img src="/images/temples/Arunachalam.webp" alt="Arunachalam" className="w-full h-full object-cover" />
+                    <img
+                      src="/images/temples/Arunachalam.webp"
+                      alt="Arunachalam"
+                      width="200"
+                      height="150"
+                      loading="lazy"
+                      decoding="async"
+                      className="w-full h-full object-cover"
+                    />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/90 to-transparent" />
                     <span className="absolute bottom-1 left-1 right-1 text-[9px] font-bold text-white leading-tight truncate">
                       3. Arunachalam
@@ -204,6 +232,10 @@ export default function Hero({ onOpenBooking }) {
               <img
                 src="/images/temples/Arunachalam.webp"
                 alt="Southern Sacred Circuit"
+                width="600"
+                height="400"
+                loading="lazy"
+                decoding="async"
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/95 via-black/40 to-transparent" />
