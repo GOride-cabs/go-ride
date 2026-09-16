@@ -3,6 +3,7 @@ import { Phone, Mail, MapPin, MessageCircle, Clock, ChevronDown, ChevronUp, Spar
 import BookingForm from '../components/BookingForm';
 import { contactConfig } from '../config/contact';
 import { siteContent } from '../data/siteContent';
+import SEOHead from '../components/SEOHead';
 
 export default function Contact() {
   const [openFaq, setOpenFaq] = useState(null);
@@ -13,6 +14,12 @@ export default function Contact() {
 
   return (
     <div className="pt-24 pb-16 bg-ivory min-h-screen">
+      <SEOHead
+        title="Contact Go Ride Tirupati Travels | 24/7 Cab Booking Desk & Phone Support"
+        description="Contact Go Ride Tirupati Travels for 24/7 cab reservations. Call +91 85009 53558 or WhatsApp N Viswanadham for Tirumala darshan, airport pickup & outstation taxi bookings."
+        canonicalUrl="https://www.goridetirupatitravels.in/contact"
+        keywords="Contact Go Ride Tirupati, Tirupati Cab Phone Number, Tirupati Taxi Booking Contact, N Viswanadham Phone"
+      />
       
       {/* Header Banner */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 text-center">

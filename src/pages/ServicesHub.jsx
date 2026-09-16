@@ -6,6 +6,7 @@ import {
   Users, Fuel, Navigation, Award, Calendar, Check
 } from 'lucide-react';
 import { contactConfig } from '../config/contact';
+import SEOHead from '../components/SEOHead';
 import CTASection from '../components/CTASection';
 
 export default function ServicesHub({ onOpenBooking }) {
@@ -48,6 +49,7 @@ export default function ServicesHub({ onOpenBooking }) {
       desc: "Arriving at Tirupati International Airport (Renigunta - TIR)? Get punctual, flight-tracked airport taxi pickups with nameboard greeting. Direct transfers available from Tirupati Airport to Tirumala hilltop cottages or city hotels without delay.",
       keywords: ["Tirupati Airport Taxi", "Tirupati Airport Cab", "Taxi from Tirupati Airport", "Tirupati Airport to Tirumala Cab", "Tirupati Airport Pickup Taxi", "Tirupati Airport Drop Taxi"],
       rates: "24/7 On-Demand Airport Transfers",
+      link: "/services/tirupati-airport-taxi",
       bookingTarget: "Tirupati Airport Pickup / Drop"
     },
     {
@@ -70,7 +72,7 @@ export default function ServicesHub({ onOpenBooking }) {
       desc: "Travel stress-free across state borders with our licensed interstate outstation cabs. Fixed per-km billing, courteous drivers, and timely drops to Chennai Airport, Bengaluru, Vellore CMC, Kanchipuram, and Arunachalam.",
       keywords: ["Tirupati Outstation Cabs", "Tirupati Outstation Taxi", "Tirupati to Chennai Cab", "Tirupati to Bangalore Taxi", "Tirupati to Vellore Cab", "Tirupati to Kanchipuram Taxi", "Tirupati to Srikalahasti Cab"],
       rates: "Swift Dzire ₹14/km • Ertiga ₹19/km • Innova ₹23/km",
-      link: "/packages",
+      link: "/services/tirupati-outstation-cabs",
       bookingTarget: "Tirupati Outstation Cab"
     },
     {
@@ -98,43 +100,43 @@ export default function ServicesHub({ onOpenBooking }) {
     },
     {
       title: "Kanipakam • Golden Temple • Arunachalam",
-      badge: "1-Day Tri-Temple",
-      distance: "~380 km Round Trip",
-      time: "1 Day Circuit",
-      desc: "Vara Siddhi Vinayaka, Sripuram Golden Temple, and Arunachaleswarar Shiva temple.",
+      badge: "1 Day Circuit",
+      distance: "380 km Round Trip",
+      time: "Full Day",
+      desc: "Covers Kanipakam Vinayaka, Sripuram Golden Temple (Vellore), and Tiruvannamalai.",
       link: "/packages/kanipakam-golden-temple-arunachalam-1-day"
     },
     {
-      title: "Complete 13 Sightseeing Tour",
-      badge: "Full Day",
-      distance: "Valley + Hilltop",
-      time: "8 - 10 Hours",
-      desc: "All 13 sacred temples and theerthams covered with a dedicated driver.",
-      link: "/packages/complete-tirupati-tirumala-local-sightseeing-tour-1-day"
+      title: "Tirupati Local 5 Temples Tour",
+      badge: "City Circuit",
+      distance: "45 km Circuit",
+      time: "6-7 Hours",
+      desc: "Padmavathi Temple, Srinivasa Mangapuram, ISKCON, Kapila Theertham & Govindaraja Swamy.",
+      link: "/packages/tirupati-local-5-temple-tour-1-day"
     },
     {
-      title: "2-Day Sacred Pilgrimage Circuit",
-      badge: "2 Days / 1 Night",
-      distance: "~580 km Total",
-      time: "2 Days",
-      desc: "Tirupati → Kanipakam → Vellore → Arunachalam → Kanchipuram → Tiruttani.",
-      link: "/packages/two-days-kanipakam-arunachalam-kanchipuram-tiruttani"
-    },
-    {
-      title: "Tirupati to Srikalahasti Taxi",
-      badge: "Rahu-Ketu Kshetram",
-      distance: "38 km",
-      time: "50 mins",
-      desc: "Vayu Lingam temple darshan and Rahu-Ketu Sarpa Dosha Nivarana poojas.",
+      title: "Tirupati to Srikalahasti",
+      badge: "Half Day",
+      distance: "38 km (One Way)",
+      time: "45 mins",
+      desc: "Special cab service for Rahu-Ketu Sarpa Dosha Nivarana poojas with waiting time.",
       link: "/packages/tirupati-to-srikalahasti-1-day"
     },
     {
-      title: "Tirupati to Kanchipuram & Tiruttani",
-      badge: "Temple Tour",
-      distance: "115 km",
-      time: "2.5 Hours",
-      desc: "Kamakshi Amman, Ekambareswarar, and Lord Murugan hill temple darshan.",
-      link: "/packages/tirupati-to-kanchipuram-1-day"
+      title: "Tirupati to Chennai (Drop)",
+      badge: "Outstation",
+      distance: "135 km",
+      time: "3.5 Hours",
+      desc: "Direct one-way drop to Chennai Airport (MAA), Chennai Central, or city addresses.",
+      link: "/services/tirupati-outstation-cabs"
+    },
+    {
+      title: "Tirupati to Bangalore (Drop)",
+      badge: "Outstation",
+      distance: "250 km",
+      time: "4.5 Hours",
+      desc: "Point-to-point drop to Kempegowda Airport (BLR), Whitefield, or Bengaluru city.",
+      link: "/services/tirupati-outstation-cabs"
     }
   ];
 
@@ -178,24 +180,19 @@ export default function ServicesHub({ onOpenBooking }) {
     {
       num: "02",
       title: "Choose Your Vehicle",
-      desc: "Select Dzire (4+1), Ertiga (6+1), Innova Crysta (7+1), or Tempo Traveller."
+      desc: "Select AC Sedan (Dzire), Family MUV (Ertiga), Luxury MPV (Innova), or Minibus (Tempo)."
     },
     {
       num: "03",
-      title: "Enter Pickup Location",
-      desc: "Provide your Tirupati hotel, railway station, or airport flight number."
-    },
-    {
-      num: "04",
       title: "Instant Confirmation",
-      desc: "Receive chauffeur and cab details directly via WhatsApp or phone call."
+      desc: "Get immediate booking confirmation with driver name, vehicle number, and transparent billing."
     }
   ];
 
-  const seoFaqs = [
+  const faqs = [
     {
-      q: "Which is the best cab service in Tirupati for family pilgrimage?",
-      a: "Go Ride Tirupati Cabs is rated 4.9/5 by pilgrims for our clean, sanitized air-conditioned vehicles (Swift Dzire, Maruti Ertiga, Innova Crysta, Tempo Traveller), certified local ghat road chauffeurs, and transparent per-kilometer billing with zero hidden charges."
+      q: "How to book the best cab service in Tirupati?",
+      a: "You can book Go Ride Tirupati Cabs by calling +91 85009 53558, contacting us on WhatsApp, or using our online booking form. We offer 24/7 doorstep pickup across all Tirupati hotels, railway stations, and airport."
     },
     {
       q: "How can I book a taxi from Tirupati to Tirumala?",
@@ -225,6 +222,12 @@ export default function ServicesHub({ onOpenBooking }) {
 
   return (
     <div className="pt-24 pb-16 bg-ivory min-h-screen">
+      <SEOHead
+        title="Tirupati Cab & Taxi Service | 24/7 Tirumala, Airport & Outstation Cabs"
+        description="Book the best cab and taxi service in Tirupati. 24/7 Tirumala Darshan cabs, Tirupati Airport (TIR) transfers, local 13-temple sightseeing & outstation cabs to Chennai and Bangalore from ₹14/km. Call +91 85009 53558."
+        canonicalUrl="https://www.goridetirupatitravels.in/services/tirupati-cabs"
+        keywords="Tirupati Cabs, Cabs in Tirupati, Cab Service in Tirupati, Taxi in Tirupati, Taxi Service in Tirupati, Tirupati Cab Booking, Best Cabs in Tirupati, 24 Hours Cab Service Tirupati, Tirupati to Tirumala Cab"
+      />
       
       {/* 1. Header Banner */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 text-center">

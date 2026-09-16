@@ -2,6 +2,7 @@ import React from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { ArrowLeft, Clock, ShieldCheck, Check, MessageCircle, Sparkles, MapPin, Phone, Car, ChevronRight, Calendar } from 'lucide-react';
 import BookingForm from '../components/BookingForm';
+import SEOHead from '../components/SEOHead';
 import { packages } from '../data/packages';
 import { contactConfig } from '../config/contact';
 
@@ -30,8 +31,35 @@ export default function PackageDetails({ onOpenBooking }) {
     window.open(url, '_blank');
   };
 
+  const schemaJson = {
+    "@context": "https://schema.org",
+    "@type": "TouristTrip",
+    "name": pkg.title,
+    "description": overview,
+    "provider": {
+      "@type": "LocalBusiness",
+      "name": "Go Ride Tirupati Travels",
+      "telephone": "+918500953558",
+      "url": "https://www.goridetirupatitravels.in/"
+    },
+    "touristType": "Pilgrim",
+    "offers": {
+      "@type": "Offer",
+      "priceCurrency": "INR",
+      "availability": "https://schema.org/InStock",
+      "validFrom": "2026-01-01"
+    }
+  };
+
   return (
     <div className="pt-24 pb-16 bg-ivory min-h-screen">
+      <SEOHead
+        title={`${pkg.title} | Tirupati Cab Tour & Itinerary`}
+        description={`${overview.slice(0, 150)}... Book comfortable private AC cab with Go Ride. Call +91 85009 53558.`}
+        canonicalUrl={`https://www.goridetirupatitravels.in/packages/${pkg.slug}`}
+        keywords={`${pkg.title}, Tirupati Cabs, Tirupati Pilgrimage Tour, Tirupati Cab Booking, Go Ride Tirupati`}
+        schemaJson={schemaJson}
+      />
       
       {/* Top Breadcrumb Back Navigation */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-4 pb-4">

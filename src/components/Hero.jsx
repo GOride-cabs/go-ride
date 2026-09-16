@@ -17,17 +17,17 @@ export default function Hero({ onOpenBooking }) {
             <span>GO RIDE TIRUPATI CABS • 24/7 ONLINE BOOKINGS</span>
           </div>
 
-          {/* Main Headline */}
-          <h1 className="font-serif text-4xl sm:text-6xl lg:text-7xl font-bold tracking-tight text-charcoal leading-[1.08]">
-            Your Sacred Journey<br />
-            <span className="italic font-normal text-maroon-accent">
-              Starts from Tirupati.
+          {/* Main Headline (Targeting Primary Search Intent Naturally) */}
+          <h1 className="font-serif text-3xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-charcoal leading-[1.12]">
+            Best Cab &amp; Taxi Service in Tirupati<br />
+            <span className="italic font-normal text-maroon-accent text-2xl sm:text-4xl lg:text-5xl block mt-1">
+              For Tirumala Darshan, Airport &amp; Outstation
             </span>
           </h1>
 
           {/* Subtitle */}
           <p className="text-base sm:text-lg text-charcoal-muted max-w-2xl mx-auto font-normal leading-relaxed">
-            Sanitized, air-conditioned cabs for Tirumala darshan, Kanipakam, Arunachalam, local temple circuits, and Chennai & Bangalore drops with experienced local chauffeurs.
+            Go Ride Tirupati Travels provides 24/7 sanitized cabs for Tirumala darshan, Tirupati Airport (TIR) pickup, local 13-temple sightseeing, and Chennai &amp; Bangalore drops from ₹14/km.
           </p>
 
           {/* Direct Action Buttons */}

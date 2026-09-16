@@ -6,19 +6,21 @@ import { contactConfig } from '../config/contact';
 export default function Footer() {
   const popularRoutes = [
     { label: "Tirupati to Tirumala (1 Day)", path: "/packages/tirupati-to-tirumala-1-day" },
+    { label: "Tirupati Airport (TIR) Taxi Transfers", path: "/services/tirupati-airport-taxi" },
+    { label: "Tirupati Outstation Cabs & Drops", path: "/services/tirupati-outstation-cabs" },
     { label: "Kanipakam • Golden Temple • Arunachalam", path: "/packages/kanipakam-golden-temple-arunachalam-1-day" },
     { label: "Complete Tirupati & Tirumala Sightseeing (13 Sights)", path: "/packages/complete-tirupati-tirumala-local-sightseeing-tour-1-day" },
     { label: "Tirupati Local 5 Temples Circuit", path: "/packages/tirupati-local-5-temple-tour-1-day" },
     { label: "2 Days Sacred Pilgrimage Tour", path: "/packages/two-days-kanipakam-arunachalam-kanchipuram-tiruttani" },
     { label: "Tirupati to Srikalahasti Cab", path: "/packages/tirupati-to-srikalahasti-1-day" },
     { label: "Tirupati to Kanchipuram & Tiruttani", path: "/packages/tirupati-to-kanchipuram-1-day" },
-    { label: "Tirupati Airport (TIR) Taxi Transfers", path: "/services" },
-    { label: "Tirupati to Chennai & Bangalore Drops", path: "/services" },
   ];
 
   const quickLinks = [
     { label: "Home", path: "/" },
-    { label: "Cab Services Hub", path: "/services" },
+    { label: "Cab Services Hub", path: "/services/tirupati-cabs" },
+    { label: "Tirupati Airport Taxi", path: "/services/tirupati-airport-taxi" },
+    { label: "Tirupati Outstation Cabs", path: "/services/tirupati-outstation-cabs" },
     { label: "Pilgrimage Packages", path: "/packages" },
     { label: "Local Sightseeing (13 Sights)", path: "/sightseeing" },
     { label: "Vehicle Fleet & Tariffs", path: "/vehicles" },

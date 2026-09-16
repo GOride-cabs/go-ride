@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Sparkles } from 'lucide-react';
+import SEOHead from '../components/SEOHead';
 import JourneyCard from '../components/JourneyCard';
 import CTASection from '../components/CTASection';
 import { packages } from '../data/packages';
@@ -23,6 +24,12 @@ export default function Packages({ onOpenBooking }) {
 
   return (
     <div className="pt-24 pb-16 bg-ivory min-h-screen">
+      <SEOHead
+        title="Tirupati Tour Packages & Temple Pilgrimage Cabs | 1 & 2 Day Circuits"
+        description="Explore popular Tirupati pilgrimage packages & itineraries. Tirupati to Tirumala 1-Day darshan, Kanipakam, Arunachalam, Golden Temple Vellore & local 5-temple tours. Sanitized AC cabs with certified chauffeurs. Call +91 85009 53558."
+        canonicalUrl="https://www.goridetirupatitravels.in/packages"
+        keywords="Tirupati Tour Packages, Tirupati Temple Tour Packages, Tirupati Pilgrimage Cab Packages, Tirupati to Tirumala Package, Tirupati Arunachalam Package, Tirupati Sightseeing Package"
+      />
       
       {/* Header Banner */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 text-center">

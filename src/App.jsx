@@ -7,6 +7,8 @@ import MobileBottomBar from './components/MobileBottomBar';
 import BookingModal from './components/BookingModal';
 import Home from './pages/Home';
 import ServicesHub from './pages/ServicesHub';
+import AirportTaxi from './pages/AirportTaxi';
+import OutstationCabs from './pages/OutstationCabs';
 import Packages from './pages/Packages';
 import PackageDetails from './pages/PackageDetails';
 import Vehicles from './pages/Vehicles';
@@ -73,6 +75,14 @@ export default function App() {
             <Route
               path="/services/tirupati-cabs"
               element={<ServicesHub onOpenBooking={handleOpenBooking} />}
+            />
+            <Route
+              path="/services/tirupati-airport-taxi"
+              element={<AirportTaxi onOpenBooking={handleOpenBooking} />}
+            />
+            <Route
+              path="/services/tirupati-outstation-cabs"
+              element={<OutstationCabs onOpenBooking={handleOpenBooking} />}
             />
             <Route
               path="/packages"

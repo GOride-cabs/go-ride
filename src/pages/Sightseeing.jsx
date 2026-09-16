@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { Sparkles, MapPin, Clock, Phone, MessageCircle, ArrowRight, ShieldCheck, CheckCircle2, Navigation, Car } from 'lucide-react';
 import { sightseeingPlaces } from '../data/sightseeing';
 import { contactConfig } from '../config/contact';
+import SEOHead from '../components/SEOHead';
 import CTASection from '../components/CTASection';
 
 export default function Sightseeing({ onOpenBooking }) {
@@ -32,6 +33,12 @@ export default function Sightseeing({ onOpenBooking }) {
 
   return (
     <div className="pt-24 pb-16 bg-ivory min-h-screen">
+      <SEOHead
+        title="Tirupati Local Sightseeing Cabs | All 13 Sacred Temples & Hilltop Theerthams"
+        description="Book local sightseeing cabs in Tirupati & Tirumala. Visit all 13 holy sights including Akasa Ganga, Papavinasam, Silathoranam, Padmavathi Temple & Kapila Theertham. Dedicated chauffeur from ₹14/km. Call +91 85009 53558."
+        canonicalUrl="https://www.goridetirupatitravels.in/sightseeing"
+        keywords="Tirupati Local Sightseeing Cab, Tirupati Sightseeing Taxi, Tirumala Sightseeing Cab, Tirupati 13 Temples Tour, Tirupati Temple Tour Cab, Tirupati Darshan Taxi"
+      />
       
       {/* Header Banner */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 text-center">

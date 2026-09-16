@@ -2,6 +2,7 @@ import React from 'react';
 import { Sparkles, MessageCircle, ArrowRight, ShieldCheck, Users, Car, Wind } from 'lucide-react';
 import { vehicles, farePolicy } from '../data/vehicles';
 import { contactConfig } from '../config/contact';
+import SEOHead from '../components/SEOHead';
 import CTASection from '../components/CTASection';
 
 export default function Vehicles({ onOpenBooking }) {
@@ -15,6 +16,12 @@ export default function Vehicles({ onOpenBooking }) {
 
   return (
     <div className="pt-24 pb-16 bg-ivory min-h-screen">
+      <SEOHead
+        title="Tirupati Cab Fleet & Per-KM Taxi Rates | Swift Dzire, Ertiga, Innova Crysta & Tempo"
+        description="View vehicle fleet and transparent per-km taxi tariffs for Tirupati. Swift Dzire ₹14/km, Maruti Ertiga ₹19/km, Innova Crysta ₹23/km, Force Tempo Traveller ₹28/km. Call +91 85009 53558."
+        canonicalUrl="https://www.goridetirupatitravels.in/vehicles"
+        keywords="Tirupati Cab Fleet, Tirupati Taxi Rates, Swift Dzire Cab Tirupati, Ertiga Taxi Tirupati, Innova Crysta Tirupati, Tempo Traveller Tirupati, Tirupati Cab Tariff"
+      />
       
       {/* Header Banner */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 text-center">

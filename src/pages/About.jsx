@@ -1,6 +1,7 @@
 import React from 'react';
 import { Sparkles, CheckCircle2 } from 'lucide-react';
 import { siteContent } from '../data/siteContent';
+import SEOHead from '../components/SEOHead';
 import WhyChooseUs from '../components/WhyChooseUs';
 import GoogleReviewsSection from '../components/GoogleReviewsSection';
 import CTASection from '../components/CTASection';
@@ -8,6 +9,12 @@ import CTASection from '../components/CTASection';
 export default function About({ onOpenBooking }) {
   return (
     <div className="pt-24 pb-16 bg-ivory min-h-screen">
+      <SEOHead
+        title="About Go Ride Tirupati Travels | Premier 24/7 Tirupati Cab Service"
+        description="Learn about Go Ride Tirupati Travels. Founded by N Viswanadham to provide punctual, transparent, and certified pilgrimage cab services across Tirumala and Tirupati. Call +91 85009 53558."
+        canonicalUrl="https://www.goridetirupatitravels.in/about"
+        keywords="About Go Ride Tirupati, Tirupati Cab Company, N Viswanadham Travels, Best Taxi Operator Tirupati"
+      />
       
       {/* Header Section */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 text-center">

@@ -7,16 +7,28 @@
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://www.goridetirupatitravels.in/services</loc>
+    <loc>https://www.goridetirupatitravels.in/services/tirupati-cabs</loc>
+    <lastmod>2026-09-16</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://www.goridetirupatitravels.in/services/tirupati-airport-taxi</loc>
     <lastmod>2026-09-16</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.95</priority>
   </url>
   <url>
-    <loc>https://www.goridetirupatitravels.in/services/tirupati-cabs</loc>
+    <loc>https://www.goridetirupatitravels.in/services/tirupati-outstation-cabs</loc>
     <lastmod>2026-09-16</lastmod>
     <changefreq>daily</changefreq>
-    <priority>1.0</priority>
+    <priority>0.95</priority>
+  </url>
+  <url>
+    <loc>https://www.goridetirupatitravels.in/packages/tirupati-to-tirumala-1-day</loc>
+    <lastmod>2026-09-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
   </url>
   <url>
     <loc>https://www.goridetirupatitravels.in/packages</loc>
@@ -25,10 +37,10 @@
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://www.goridetirupatitravels.in/packages/tirupati-to-tirumala-1-day</loc>
+    <loc>https://www.goridetirupatitravels.in/sightseeing</loc>
     <lastmod>2026-09-16</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.95</priority>
+    <priority>0.9</priority>
   </url>
   <url>
     <loc>https://www.goridetirupatitravels.in/packages/complete-tirupati-tirumala-local-sightseeing-tour-1-day</loc>
@@ -65,12 +77,6 @@
     <lastmod>2026-09-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
-  </url>
-  <url>
-    <loc>https://www.goridetirupatitravels.in/sightseeing</loc>
-    <lastmod>2026-09-16</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
   </url>
   <url>
     <loc>https://www.goridetirupatitravels.in/vehicles</loc>
