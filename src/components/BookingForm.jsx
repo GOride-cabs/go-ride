@@ -177,21 +177,25 @@ export default function BookingForm({
     );
   }
 
+  const idPrefix = isModal ? 'modal-booking-' : 'booking-';
+
   return (
     <form onSubmit={handleSubmit} className="space-y-4 text-left">
       
       {/* 1. Name & Phone (2 Cols) */}
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-3.5">
         <div>
-          <label className="block text-xs font-bold text-charcoal mb-1">
+          <label htmlFor={`${idPrefix}name`} className="block text-xs font-bold text-charcoal mb-1">
             Full Name *
           </label>
           <div className="relative">
-            <User className="w-4 h-4 text-charcoal-muted absolute left-3.5 top-1/2 -translate-y-1/2" />
+            <User className="w-4 h-4 text-charcoal-muted absolute left-3.5 top-1/2 -translate-y-1/2 pointer-events-none" />
             <input
+              id={`${idPrefix}name`}
               type="text"
               name="name"
               required
+              aria-required="true"
               value={formData.name}
               onChange={handleChange}
               placeholder="e.g. Ramesh Kumar"
@@ -201,15 +205,17 @@ export default function BookingForm({
         </div>
 
         <div>
-          <label className="block text-xs font-bold text-charcoal mb-1">
+          <label htmlFor={`${idPrefix}phone`} className="block text-xs font-bold text-charcoal mb-1">
             Phone Number (WhatsApp) *
           </label>
           <div className="relative">
-            <Phone className="w-4 h-4 text-charcoal-muted absolute left-3.5 top-1/2 -translate-y-1/2" />
+            <Phone className="w-4 h-4 text-charcoal-muted absolute left-3.5 top-1/2 -translate-y-1/2 pointer-events-none" />
             <input
+              id={`${idPrefix}phone`}
               type="tel"
               name="phone"
               required
+              aria-required="true"
               value={formData.phone}
               onChange={handleChange}
               placeholder="e.g. 9876543210"
@@ -221,12 +227,13 @@ export default function BookingForm({
 
       {/* 2. Email Address */}
       <div>
-        <label className="block text-xs font-bold text-charcoal mb-1">
+        <label htmlFor={`${idPrefix}email`} className="block text-xs font-bold text-charcoal mb-1">
           Email Address <span className="text-charcoal-muted font-normal">(for booking confirmation receipt)</span>
         </label>
         <div className="relative">
-          <Mail className="w-4 h-4 text-charcoal-muted absolute left-3.5 top-1/2 -translate-y-1/2" />
+          <Mail className="w-4 h-4 text-charcoal-muted absolute left-3.5 top-1/2 -translate-y-1/2 pointer-events-none" />
           <input
+            id={`${idPrefix}email`}
             type="email"
             name="email"
             value={formData.email}
@@ -239,13 +246,15 @@ export default function BookingForm({
 
       {/* 3. Destination / Tour Package Selection */}
       <div>
-        <label className="block text-xs font-bold text-charcoal mb-1">
+        <label htmlFor={`${idPrefix}destination`} className="block text-xs font-bold text-charcoal mb-1">
           Select Destination / Pilgrimage Package *
         </label>
         <div className="relative">
-          <MapPin className="w-4 h-4 text-charcoal-muted absolute left-3.5 top-1/2 -translate-y-1/2" />
+          <MapPin className="w-4 h-4 text-charcoal-muted absolute left-3.5 top-1/2 -translate-y-1/2 pointer-events-none" />
           <select
+            id={`${idPrefix}destination`}
             name="destination"
+            aria-label="Select Destination / Pilgrimage Package"
             value={formData.destination}
             onChange={handleChange}
             className="w-full pl-10 pr-3 py-2.5 rounded-xl border border-warmBorder bg-white text-xs text-charcoal focus:border-maroon-accent focus:ring-1 focus:ring-maroon-accent outline-none transition-all appearance-none cursor-pointer"
@@ -259,10 +268,11 @@ export default function BookingForm({
 
       {/* 4. Pickup Location */}
       <div>
-        <label className="block text-xs font-bold text-charcoal mb-1">
+        <label htmlFor={`${idPrefix}pickup`} className="block text-xs font-bold text-charcoal mb-1">
           Pickup Location in Tirupati
         </label>
         <input
+          id={`${idPrefix}pickup`}
           type="text"
           name="pickupLocation"
           value={formData.pickupLocation}
@@ -275,15 +285,17 @@ export default function BookingForm({
       {/* 5. Date & Time (2 Cols) */}
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-3.5">
         <div>
-          <label className="block text-xs font-bold text-charcoal mb-1">
+          <label htmlFor={`${idPrefix}date`} className="block text-xs font-bold text-charcoal mb-1">
             Travel Date *
           </label>
           <div className="relative">
-            <Calendar className="w-4 h-4 text-charcoal-muted absolute left-3.5 top-1/2 -translate-y-1/2" />
+            <Calendar className="w-4 h-4 text-charcoal-muted absolute left-3.5 top-1/2 -translate-y-1/2 pointer-events-none" />
             <input
+              id={`${idPrefix}date`}
               type="date"
               name="date"
               required
+              aria-required="true"
               value={formData.date}
               onChange={handleChange}
               className="w-full pl-10 pr-3 py-2.5 rounded-xl border border-warmBorder bg-white text-xs text-charcoal focus:border-maroon-accent focus:ring-1 focus:ring-maroon-accent outline-none transition-all"
@@ -292,15 +304,17 @@ export default function BookingForm({
         </div>
 
         <div>
-          <label className="block text-xs font-bold text-charcoal mb-1">
+          <label htmlFor={`${idPrefix}time`} className="block text-xs font-bold text-charcoal mb-1">
             Pickup Time *
           </label>
           <div className="relative">
-            <Clock className="w-4 h-4 text-charcoal-muted absolute left-3.5 top-1/2 -translate-y-1/2" />
+            <Clock className="w-4 h-4 text-charcoal-muted absolute left-3.5 top-1/2 -translate-y-1/2 pointer-events-none" />
             <input
+              id={`${idPrefix}time`}
               type="text"
               name="time"
               required
+              aria-required="true"
               value={formData.time}
               onChange={handleChange}
               placeholder="e.g. 06:00 AM"
@@ -313,13 +327,15 @@ export default function BookingForm({
       {/* 6. Vehicle Selection & Passengers */}
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-3.5">
         <div>
-          <label className="block text-xs font-bold text-charcoal mb-1">
+          <label htmlFor={`${idPrefix}vehicle`} className="block text-xs font-bold text-charcoal mb-1">
             Preferred Vehicle *
           </label>
           <div className="relative">
-            <Car className="w-4 h-4 text-charcoal-muted absolute left-3.5 top-1/2 -translate-y-1/2" />
+            <Car className="w-4 h-4 text-charcoal-muted absolute left-3.5 top-1/2 -translate-y-1/2 pointer-events-none" />
             <select
+              id={`${idPrefix}vehicle`}
               name="vehicle"
+              aria-label="Preferred Vehicle"
               value={formData.vehicle}
               onChange={handleChange}
               className="w-full pl-10 pr-3 py-2.5 rounded-xl border border-warmBorder bg-white text-xs text-charcoal focus:border-maroon-accent focus:ring-1 focus:ring-maroon-accent outline-none transition-all appearance-none cursor-pointer"
@@ -332,11 +348,13 @@ export default function BookingForm({
         </div>
 
         <div>
-          <label className="block text-xs font-bold text-charcoal mb-1">
+          <label htmlFor={`${idPrefix}passengers`} className="block text-xs font-bold text-charcoal mb-1">
             Number of Passengers
           </label>
           <select
+            id={`${idPrefix}passengers`}
             name="passengers"
+            aria-label="Number of Passengers"
             value={formData.passengers}
             onChange={handleChange}
             className="w-full px-3.5 py-2.5 rounded-xl border border-warmBorder bg-white text-xs text-charcoal focus:border-maroon-accent focus:ring-1 focus:ring-maroon-accent outline-none transition-all appearance-none cursor-pointer"
@@ -352,10 +370,11 @@ export default function BookingForm({
 
       {/* 7. Special Notes */}
       <div>
-        <label className="block text-xs font-bold text-charcoal mb-1">
+        <label htmlFor={`${idPrefix}notes`} className="block text-xs font-bold text-charcoal mb-1">
           Special Requests / Darshan Slot Details <span className="text-charcoal-muted font-normal">(Optional)</span>
         </label>
         <textarea
+          id={`${idPrefix}notes`}
           name="notes"
           rows="2"
           value={formData.notes}
@@ -369,6 +388,7 @@ export default function BookingForm({
       <button
         type="submit"
         disabled={status === 'submitting'}
+        aria-label="Submit Booking Enquiry"
         className="w-full py-3.5 px-4 rounded-xl bg-maroon-accent hover:bg-maroon-hover text-white font-bold text-xs uppercase tracking-wider flex items-center justify-center space-x-2 shadow-sm transition-all cursor-pointer disabled:opacity-75"
       >
         <Send className="w-4 h-4 text-gold-soft" />

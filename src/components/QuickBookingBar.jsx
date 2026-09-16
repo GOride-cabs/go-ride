@@ -40,11 +40,12 @@ export default function QuickBookingBar({ onBookWithData }) {
           
           {/* Pickup */}
           <div className="space-y-1.5">
-            <label className="text-[11px] font-bold tracking-wider uppercase text-charcoal-muted block flex items-center gap-1.5">
+            <label htmlFor="quick-pickup" className="text-[11px] font-bold tracking-wider uppercase text-charcoal-muted block flex items-center gap-1.5">
               <MapPin className="w-3.5 h-3.5 text-gold" />
               Pickup
             </label>
             <input
+              id="quick-pickup"
               type="text"
               value={pickup}
               onChange={(e) => setPickup(e.target.value)}
@@ -55,12 +56,14 @@ export default function QuickBookingBar({ onBookWithData }) {
 
           {/* Destination */}
           <div className="space-y-1.5">
-            <label className="text-[11px] font-bold tracking-wider uppercase text-charcoal-muted block flex items-center gap-1.5">
+            <label htmlFor="quick-destination" className="text-[11px] font-bold tracking-wider uppercase text-charcoal-muted block flex items-center gap-1.5">
               <MapPin className="w-3.5 h-3.5 text-maroon-accent" />
               Destination
             </label>
             <select
+              id="quick-destination"
               value={destination}
+              aria-label="Destination"
               onChange={(e) => setDestination(e.target.value)}
               className="w-full bg-ivory px-3.5 py-2.5 rounded-xl border border-warmBorder text-xs sm:text-sm font-medium text-charcoal focus:outline-none focus:ring-2 focus:ring-gold/30 focus:border-gold transition-all"
             >
@@ -72,11 +75,12 @@ export default function QuickBookingBar({ onBookWithData }) {
 
           {/* Date */}
           <div className="space-y-1.5">
-            <label className="text-[11px] font-bold tracking-wider uppercase text-charcoal-muted block flex items-center gap-1.5">
+            <label htmlFor="quick-travel-date" className="text-[11px] font-bold tracking-wider uppercase text-charcoal-muted block flex items-center gap-1.5">
               <Calendar className="w-3.5 h-3.5 text-gold" />
               Travel Date
             </label>
             <input
+              id="quick-travel-date"
               type="date"
               value={travelDate}
               onChange={(e) => setTravelDate(e.target.value)}
@@ -87,12 +91,14 @@ export default function QuickBookingBar({ onBookWithData }) {
 
           {/* Vehicle */}
           <div className="space-y-1.5">
-            <label className="text-[11px] font-bold tracking-wider uppercase text-charcoal-muted block flex items-center gap-1.5">
+            <label htmlFor="quick-vehicle" className="text-[11px] font-bold tracking-wider uppercase text-charcoal-muted block flex items-center gap-1.5">
               <Car className="w-3.5 h-3.5 text-charcoal" />
               Vehicle
             </label>
             <select
+              id="quick-vehicle"
               value={vehicle}
+              aria-label="Vehicle"
               onChange={(e) => setVehicle(e.target.value)}
               className="w-full bg-ivory px-3.5 py-2.5 rounded-xl border border-warmBorder text-xs sm:text-sm font-medium text-charcoal focus:outline-none focus:ring-2 focus:ring-gold/30 focus:border-gold transition-all"
             >

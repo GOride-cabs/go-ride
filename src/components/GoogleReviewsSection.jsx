@@ -1,22 +1,37 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useRef } from 'react';
 import { Star, MessageCircle, ShieldCheck } from 'lucide-react';
 import { contactConfig } from '../config/contact';
 
 export default function GoogleReviewsSection() {
+  const sectionRef = useRef(null);
+
   useEffect(() => {
-    // Dynamically ensure Elfsight platform script is initialized
-    const scriptId = 'elfsight-platform-script';
-    if (!document.getElementById(scriptId)) {
-      const script = document.createElement('script');
-      script.id = scriptId;
-      script.src = 'https://elfsightcdn.com/platform.js';
-      script.async = true;
-      document.body.appendChild(script);
+    const observer = new IntersectionObserver(
+      (entries) => {
+        if (entries[0].isIntersecting) {
+          const scriptId = 'elfsight-platform-script';
+          if (!document.getElementById(scriptId)) {
+            const script = document.createElement('script');
+            script.id = scriptId;
+            script.src = 'https://elfsightcdn.com/platform.js';
+            script.async = true;
+            document.body.appendChild(script);
+          }
+          observer.disconnect();
+        }
+      },
+      { rootMargin: '300px' }
+    );
+
+    if (sectionRef.current) {
+      observer.observe(sectionRef.current);
     }
+
+    return () => observer.disconnect();
   }, []);
 
   return (
-    <section className="py-20 sm:py-24 bg-ivory-200/40 border-t border-warmBorder relative overflow-hidden">
+    <section ref={sectionRef} className="py-20 sm:py-24 bg-ivory-200/40 border-t border-warmBorder relative overflow-hidden">
       
       {/* Background radial glow */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[500px] bg-gold/5 rounded-full blur-3xl pointer-events-none" />
