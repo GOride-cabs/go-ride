@@ -1,4 +1,4 @@
-# robots.txt for Go Ride Tirupati Cabs
+# robots.txt for Go Ride Tirupati Travels (https://www.goridetirupatitravels.in)
 User-agent: *
 Allow: /
-Sitemap: https://go-ride-6n0afhnz1-goridetirupaticab-5436.vercel.app/sitemap.xml
+Sitemap: https://www.goridetirupatitravels.in/sitemap.xml
