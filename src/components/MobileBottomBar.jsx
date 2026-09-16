@@ -32,7 +32,8 @@ export default function MobileBottomBar({ onOpenBooking }) {
         {/* Book Now Button */}
         <button
           onClick={onOpenBooking}
-          className="py-2.5 px-2 rounded-xl bg-maroon-accent text-white flex items-center justify-center space-x-1 text-xs font-bold uppercase tracking-wider shadow-sm"
+          aria-label="Book a cab in Tirupati now"
+          className="py-2.5 px-2 rounded-xl bg-maroon-accent text-white flex items-center justify-center space-x-1 text-xs font-bold uppercase tracking-wider shadow-sm cursor-pointer"
         >
           <Calendar className="w-4 h-4 text-gold-soft" />
           <span>BOOK NOW</span>

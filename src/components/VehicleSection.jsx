@@ -116,6 +116,7 @@ export default function VehicleSection({ onBookVehicle }) {
               <div className="p-5 pt-0 bg-white space-y-2">
                 <button
                   onClick={() => onBookVehicle && onBookVehicle(veh)}
+                  aria-label={`Book ${veh.name} Cab`}
                   className="w-full py-2.5 px-4 bg-maroon-accent hover:bg-maroon-hover text-white rounded-xl text-xs font-bold uppercase tracking-wider shadow-sm transition-all flex items-center justify-center space-x-1.5 cursor-pointer"
                 >
                   <span>Book {veh.name}</span>
@@ -124,6 +125,7 @@ export default function VehicleSection({ onBookVehicle }) {
 
                 <button
                   onClick={() => handleWhatsApp(veh)}
+                  aria-label={`WhatsApp tariff enquiry for ${veh.name}`}
                   className="w-full py-2 px-3 bg-ivory hover:bg-ivory-200 text-charcoal border border-warmBorder rounded-xl text-xs font-semibold transition-all flex items-center justify-center space-x-1.5 cursor-pointer"
                 >
                   <MessageCircle className="w-3.5 h-3.5 text-emerald-700" />

@@ -247,7 +247,8 @@ export default function PackageDetails({ onOpenBooking }) {
 
                 <button
                   onClick={handleWhatsAppInquiry}
-                  className="w-full py-3.5 px-4 rounded-xl bg-emerald-700 hover:bg-emerald-800 text-white font-bold text-xs uppercase tracking-wider flex items-center justify-center space-x-2 transition-all shadow-sm"
+                  aria-label="Book on WhatsApp with trip details"
+                  className="w-full py-3.5 px-4 rounded-xl bg-emerald-700 hover:bg-emerald-800 text-white font-bold text-xs uppercase tracking-wider flex items-center justify-center space-x-2 transition-all shadow-sm cursor-pointer"
                 >
                   <MessageCircle className="w-4 h-4" />
                   <span>WHATSAPP INSTANT BOOKING</span>

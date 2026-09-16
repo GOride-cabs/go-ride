@@ -80,7 +80,9 @@ export default function FAQSection() {
               >
                 <button
                   onClick={() => toggle(idx)}
-                  className="w-full p-4 sm:p-5 text-left flex items-center justify-between gap-4 hover:bg-ivory/50 transition-colors"
+                  aria-expanded={isOpen}
+                  aria-label={faq.q}
+                  className="w-full p-4 sm:p-5 text-left flex items-center justify-between gap-4 hover:bg-ivory/50 transition-colors cursor-pointer"
                 >
                   <span className="font-serif font-bold text-sm sm:text-base text-charcoal">
                     {faq.q}

@@ -116,6 +116,7 @@ export default function Navbar({ onOpenBooking }) {
 
             <button
               onClick={onOpenBooking}
+              aria-label="Book a cab in Tirupati"
               className="bg-maroon-accent hover:bg-maroon-hover text-white text-xs font-bold uppercase tracking-wider px-5 py-2.5 rounded-full shadow-editorial hover:shadow-editorial-hover transition-all duration-200 cursor-pointer"
             >
               Book Cab

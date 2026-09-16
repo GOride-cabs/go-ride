@@ -154,7 +154,8 @@ export default function ServicesSection({ onBookService }) {
 
               <button
                 onClick={() => onBookService && onBookService({ destination: srv.title, journeyType: srv.duration })}
-                className="w-full py-2.5 px-4 bg-ivory hover:bg-maroon-accent hover:text-white text-charcoal rounded-xl text-xs font-bold uppercase tracking-wider border border-warmBorder hover:border-maroon-accent transition-all flex items-center justify-center space-x-1.5"
+                aria-label={`Book or enquire ${srv.title}`}
+                className="w-full py-2.5 px-4 bg-ivory hover:bg-maroon-accent hover:text-white text-charcoal rounded-xl text-xs font-bold uppercase tracking-wider border border-warmBorder hover:border-maroon-accent transition-all flex items-center justify-center space-x-1.5 cursor-pointer"
               >
                 <span>Book / Enquire</span>
                 <ArrowRight className="w-3.5 h-3.5" />

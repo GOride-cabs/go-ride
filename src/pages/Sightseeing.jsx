@@ -263,6 +263,7 @@ export default function Sightseeing({ onOpenBooking }) {
               <div className="p-5 pt-0 bg-white space-y-2">
                 <button
                   onClick={() => onOpenBooking && onOpenBooking({ destination: place.name, journeyType: 'Local Sightseeing' })}
+                  aria-label={`Book Cab for ${place.name}`}
                   className="w-full py-2.5 px-4 bg-maroon-accent hover:bg-maroon-hover text-white rounded-xl text-xs font-bold uppercase tracking-wider shadow-sm transition-all flex items-center justify-center space-x-1.5 cursor-pointer"
                 >
                   <span>Book Cab for {place.name}</span>
@@ -271,6 +272,7 @@ export default function Sightseeing({ onOpenBooking }) {
 
                 <button
                   onClick={() => handleWhatsApp(place)}
+                  aria-label={`WhatsApp enquire about ${place.name}`}
                   className="w-full py-2 px-3 bg-ivory hover:bg-ivory-200 text-charcoal border border-warmBorder rounded-xl text-xs font-semibold transition-all flex items-center justify-center space-x-1.5 cursor-pointer"
                 >
                   <MessageCircle className="w-3.5 h-3.5 text-emerald-700" />

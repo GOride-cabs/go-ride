@@ -29,7 +29,8 @@ export default function CTASection({ onOpenBooking }) {
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
           <button
             onClick={onOpenBooking}
-            className="w-full sm:w-auto px-8 py-3.5 rounded-full bg-maroon-accent hover:bg-maroon-hover text-white font-semibold text-sm shadow-editorial hover:shadow-editorial-hover transition-all duration-200 flex items-center justify-center space-x-2"
+            aria-label={siteContent.ctaSection.primaryBtn}
+            className="w-full sm:w-auto px-8 py-3.5 rounded-full bg-maroon-accent hover:bg-maroon-hover text-white font-semibold text-sm shadow-editorial hover:shadow-editorial-hover transition-all duration-200 flex items-center justify-center space-x-2 cursor-pointer"
           >
             <Car className="w-4 h-4 text-gold-soft" />
             <span>{siteContent.ctaSection.primaryBtn}</span>

@@ -164,11 +164,13 @@ export default function Contact() {
               >
                 <button
                   onClick={() => toggleFaq(idx)}
-                  className="w-full p-5 text-left flex items-center justify-between font-serif font-bold text-base text-charcoal hover:text-maroon-accent transition-colors"
+                  aria-expanded={isOpen}
+                  aria-label={faq.q}
+                  className="w-full p-5 text-left flex items-center justify-between font-serif font-bold text-base text-charcoal hover:text-maroon-accent transition-colors cursor-pointer"
                 >
                   <span>{faq.q}</span>
                   {isOpen ? (
-                    <ChevronUp className="w-5 h-5 text-gold shrink-0 ml-2" />
+                    <ChevronUp className="w-5 h-5 text-maroon-accent shrink-0 ml-2" />
                   ) : (
                     <ChevronDown className="w-5 h-5 text-charcoal-muted shrink-0 ml-2" />
                   )}
