@@ -71,6 +71,10 @@ export default function App() {
               element={<ServicesHub onOpenBooking={handleOpenBooking} />}
             />
             <Route
+              path="/services/tirupati-cabs"
+              element={<ServicesHub onOpenBooking={handleOpenBooking} />}
+            />
+            <Route
               path="/packages"
               element={<Packages onOpenBooking={handleOpenBooking} />}
             />
