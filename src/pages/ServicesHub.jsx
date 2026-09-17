@@ -562,7 +562,7 @@ export default function ServicesHub({ onOpenBooking }) {
           </div>
 
           <div className="space-y-3">
-            {seoFaqs.map((faq, index) => {
+            {faqs.map((faq, index) => {
               const isOpen = openFaq === index;
               return (
                 <div
