@@ -16,10 +16,10 @@ export default function Home({ onOpenBooking }) {
   return (
     <div className="bg-ivory min-h-screen pb-16 sm:pb-0">
       <SEOHead
-        title="Go Ride Tirupati Cabs | Best Taxi Service in Tirupati, Tirumala & Airport Cabs"
-        description="Book the best cabs in Tirupati with Go Ride. 24/7 Tirupati to Tirumala taxi, Tirupati Airport pickup/drops, local 13-temple sightseeing & outstation cabs to Chennai, Bangalore, Vellore & Arunachalam. Transparent per-km tariffs from ₹14/km. Call +91 85009 53558."
+        title="GoRide Tirupati Travels | Tirupati Cabs & Taxi Service"
+        description="Book reliable 24/7 cabs in Tirupati with GoRide Tirupati Travels. Punctual Tirumala darshan taxis, Tirupati airport & railway transfers, local temple sightseeing & outstation cabs from ₹14/km. Call +91 85009 53558."
         canonicalUrl="https://www.goridetirupatitravels.in/"
-        keywords="Tirupati Cabs, Cabs in Tirupati, Cab Service in Tirupati, Taxi in Tirupati, Taxi Service in Tirupati, Tirupati Taxi, Tirupati Cab Booking, Best Cabs in Tirupati, 24 Hours Cab Service Tirupati, Tirupati to Tirumala Cab, Tirupati Airport Taxi"
+        keywords="Tirupati Cabs, Tirupati Taxi, Cab Service in Tirupati, Taxi in Tirupati, Tirupati to Tirumala Cab, Tirupati Airport Taxi, Tirupati Outstation Cabs, Best Cabs in Tirupati"
       />
       
       {/* 1. Hero: Signature Editorial Mosaic with Direct Contact */}

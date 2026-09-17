@@ -223,10 +223,10 @@ export default function ServicesHub({ onOpenBooking }) {
   return (
     <div className="pt-24 pb-16 bg-ivory min-h-screen">
       <SEOHead
-        title="Tirupati Cab & Taxi Service | 24/7 Tirumala, Airport & Outstation Cabs"
-        description="Book the best cab and taxi service in Tirupati. 24/7 Tirumala Darshan cabs, Tirupati Airport (TIR) transfers, local 13-temple sightseeing & outstation cabs to Chennai and Bangalore from ₹14/km. Call +91 85009 53558."
+        title="Tirupati Cab & Taxi Services | GoRide Tirupati Travels"
+        description="Explore 24/7 cab services in Tirupati: Tirumala ghat road transfers, airport & railway station pickup, local sightseeing & outstation cabs with verified local drivers."
         canonicalUrl="https://www.goridetirupatitravels.in/services/tirupati-cabs"
-        keywords="Tirupati Cabs, Cabs in Tirupati, Cab Service in Tirupati, Taxi in Tirupati, Taxi Service in Tirupati, Tirupati Cab Booking, Best Cabs in Tirupati, 24 Hours Cab Service Tirupati, Tirupati to Tirumala Cab"
+        keywords="Tirupati Cabs, Cabs in Tirupati, Cab Service in Tirupati, Taxi in Tirupati, Taxi Service in Tirupati, Tirupati Cab Booking, 24 Hours Cab Service Tirupati, Tirupati to Tirumala Cab"
       />
       
       {/* 1. Header Banner */}

@@ -15,6 +15,7 @@ import Vehicles from './pages/Vehicles';
 import Sightseeing from './pages/Sightseeing';
 import About from './pages/About';
 import Contact from './pages/Contact';
+import NotFound from './pages/NotFound';
 
 // Scroll to top on route navigation
 function ScrollToTop() {
@@ -108,14 +109,10 @@ export default function App() {
               path="/contact"
               element={<Contact />}
             />
-            {/* Catch-all fallback */}
+            {/* Catch-all 404 fallback */}
             <Route
               path="*"
-              element={
-                <Home
-                  onOpenBooking={handleOpenBooking}
-                />
-              }
+              element={<NotFound />}
             />
           </Routes>
         </main>
