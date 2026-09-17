@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, useLocation, Navigate } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import WhatsAppFloat from './components/WhatsAppFloat';
@@ -103,8 +103,13 @@ export default function App() {
               element={<Vehicles onOpenBooking={handleOpenBooking} />}
             />
             <Route
-              path="/about"
+              path="/best-cabs-in-tirupati"
               element={<About onOpenBooking={handleOpenBooking} />}
+            />
+            {/* 301 Permanent Client Redirect from /about to /best-cabs-in-tirupati */}
+            <Route
+              path="/about"
+              element={<Navigate to="/best-cabs-in-tirupati" replace />}
             />
             <Route
               path="/contact"

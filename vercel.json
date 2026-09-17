@@ -48,6 +48,13 @@
       ]
     }
   ],
+  "redirects": [
+    {
+      "source": "/about",
+      "destination": "/best-cabs-in-tirupati",
+      "permanent": true
+    }
+  ],
   "rewrites": [
     {
       "source": "/(.*)",

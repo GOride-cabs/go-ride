@@ -25,7 +25,7 @@ export default function Footer() {
     { label: "Pilgrimage Packages", path: "/packages" },
     { label: "Local Sightseeing (13 Sights)", path: "/sightseeing" },
     { label: "Vehicle Fleet & Tariffs", path: "/vehicles" },
-    { label: "About Go Ride", path: "/about" },
+    { label: "About Go Ride (Best Cabs)", path: "/best-cabs-in-tirupati" },
     { label: "Contact & Online Desk", path: "/contact" },
   ];
 

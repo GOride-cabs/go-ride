@@ -31,7 +31,7 @@ export default function Navbar({ onOpenBooking }) {
     { name: 'Tour Packages', path: '/packages' },
     { name: 'Local Sightseeing', path: '/sightseeing' },
     { name: 'Vehicles', path: '/vehicles' },
-    { name: 'About Us', path: '/about' },
+    { name: 'About Us', path: '/best-cabs-in-tirupati' },
     { name: 'Contact', path: '/contact' },
   ];
 
