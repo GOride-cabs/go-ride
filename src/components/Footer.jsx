@@ -19,6 +19,7 @@ export default function Footer() {
   const quickLinks = [
     { label: "Home", path: "/" },
     { label: "Cab Services Hub", path: "/services/tirupati-cabs" },
+    { label: "Best Travels in Tirupati", path: "/best-travels-in-tirupati" },
     { label: "Tirupati Airport Taxi", path: "/services/tirupati-airport-taxi" },
     { label: "Tirupati Outstation Cabs", path: "/services/tirupati-outstation-cabs" },
     { label: "Pilgrimage Packages", path: "/packages" },

@@ -275,6 +275,16 @@ export default function ServicesHub({ onOpenBooking }) {
             <span>WhatsApp Instant Cab Booking</span>
           </a>
         </div>
+
+        <div className="pt-4">
+          <Link
+            to="/best-travels-in-tirupati"
+            className="inline-flex items-center space-x-1.5 text-xs font-bold text-maroon-accent hover:text-maroon-hover transition-colors"
+          >
+            <span>Explore all travel packages &amp; tour operator services: Best Travels in Tirupati</span>
+            <ArrowRight className="w-3.5 h-3.5" />
+          </Link>
+        </div>
       </div>
 
       {/* 2. Why Book Go Ride Tirupati Cabs (Real Advantages) */}

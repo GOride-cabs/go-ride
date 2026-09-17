@@ -15,6 +15,7 @@ import Vehicles from './pages/Vehicles';
 import Sightseeing from './pages/Sightseeing';
 import About from './pages/About';
 import Contact from './pages/Contact';
+import BestTravelsInTirupati from './pages/BestTravelsInTirupati';
 import NotFound from './pages/NotFound';
 
 // Scroll to top on route navigation
@@ -108,6 +109,10 @@ export default function App() {
             <Route
               path="/contact"
               element={<Contact />}
+            />
+            <Route
+              path="/best-travels-in-tirupati"
+              element={<BestTravelsInTirupati onOpenBooking={handleOpenBooking} />}
             />
             {/* Catch-all 404 fallback */}
             <Route
