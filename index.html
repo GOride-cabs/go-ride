@@ -22,10 +22,21 @@
     <meta name="geo.position" content="13.6288;79.4192" />
     <meta name="ICBM" content="13.6288, 79.4192" />
 
-    <!-- Browser Tab Favicons -->
+    <!-- Browser Tab Favicons & PWA Manifest -->
     <link rel="icon" type="image/png" href="/images/logo.png" />
     <link rel="shortcut icon" href="/favicon.ico" />
-    <link rel="apple-touch-icon" href="/images/logo.png" />
+    <link rel="manifest" href="/manifest.json" />
+    <meta name="application-name" content="GoRide Cabs" />
+    <meta name="mobile-web-app-capable" content="yes" />
+
+    <!-- iOS Apple PWA Meta Tags -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="GoRide Cabs" />
+    <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png" />
+    <link rel="apple-touch-icon" sizes="192x192" href="/icons/icon-192.png" />
+    <link rel="apple-touch-icon" sizes="512x512" href="/icons/icon-512.png" />
 
     <!-- Open Graph for Social, Google Discover & WhatsApp Sharing -->
     <meta property="og:site_name" content="Go Ride Tirupati Travels" />
@@ -190,5 +201,16 @@
   <body class="bg-ivory text-charcoal font-sans antialiased selection:bg-maroon selection:text-white">
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('/sw.js').then((reg) => {
+            console.log('GoRide PWA Service Worker registered:', reg.scope);
+          }).catch((err) => {
+            console.warn('PWA registration:', err);
+          });
+        });
+      }
+    </script>
   </body>
 </html>

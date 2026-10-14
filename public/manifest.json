@@ -1,0 +1,78 @@
+{
+  "name": "GoRide Tirupati Travels - Cabs & Taxi Service",
+  "short_name": "GoRide Cabs",
+  "description": "Book 24/7 Tirupati cabs, Tirumala darshan taxi, airport transfers & temple tours. Call +91 85009 53558.",
+  "start_url": "/",
+  "id": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#702D35",
+  "theme_color": "#702D35",
+  "lang": "en-IN",
+  "categories": ["travel", "transportation", "lifestyle"],
+  "icons": [
+    {
+      "src": "/icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/icon-maskable-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/icons/icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Book Tirupati Cab",
+      "short_name": "Book Cab",
+      "description": "Book 24/7 taxi in Tirupati & Tirumala",
+      "url": "/#booking",
+      "icons": [
+        {
+          "src": "/icons/icon-192.png",
+          "sizes": "192x192"
+        }
+      ]
+    },
+    {
+      "name": "Airport Taxi",
+      "short_name": "Airport Cab",
+      "description": "Tirupati Airport (TIR) pickup & drops",
+      "url": "/services/tirupati-airport-taxi",
+      "icons": [
+        {
+          "src": "/icons/icon-192.png",
+          "sizes": "192x192"
+        }
+      ]
+    },
+    {
+      "name": "Call 24/7 Support",
+      "short_name": "Call Driver",
+      "description": "Call GoRide Tirupati Travels directly",
+      "url": "tel:+918500953558",
+      "icons": [
+        {
+          "src": "/icons/icon-192.png",
+          "sizes": "192x192"
+        }
+      ]
+    }
+  ]
+}

@@ -18,6 +18,7 @@ import Contact from './pages/Contact';
 import BestTravelsInTirupati from './pages/BestTravelsInTirupati';
 import InvoiceGenerator from './pages/InvoiceGenerator';
 import NotFound from './pages/NotFound';
+import InstallPwa from './components/InstallPwa';
 
 // Scroll to top on route navigation
 function ScrollToTop() {
@@ -150,6 +151,9 @@ export default function App() {
 
         {/* Custom Mobile Bottom Action Bar (Call / WhatsApp / Book Now) */}
         <MobileBottomBar onOpenBooking={() => handleOpenBooking()} />
+
+        {/* PWA Floating Install Prompt & iOS Guide */}
+        <InstallPwa />
 
         {/* Global Booking Modal */}
         <BookingModal

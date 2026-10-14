@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Menu, X, Phone, MessageCircle } from 'lucide-react';
+import { Menu, X, Phone, MessageCircle, Download } from 'lucide-react';
 import { contactConfig } from '../config/contact';
+import { NavbarInstallButton } from './InstallPwa';
 
 export default function Navbar({ onOpenBooking }) {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -109,6 +110,8 @@ export default function Navbar({ onOpenBooking }) {
 
           {/* Desktop Right Action CTA */}
           <div className="hidden lg:flex items-center space-x-3">
+            <NavbarInstallButton />
+
             <a
               href={`tel:${contactConfig.phoneRaw}`}
               className="flex items-center text-xs font-bold space-x-1.5 px-3.5 py-2 rounded-full border border-warmBorder text-charcoal hover:border-gold transition-colors bg-white shadow-sm"
