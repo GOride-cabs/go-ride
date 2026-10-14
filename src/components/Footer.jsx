@@ -26,6 +26,7 @@ export default function Footer() {
     { label: "Local Sightseeing (13 Sights)", path: "/sightseeing" },
     { label: "Vehicle Fleet & Tariffs", path: "/vehicles" },
     { label: "About Go Ride (Best Cabs)", path: "/best-cabs-in-tirupati" },
+    { label: "Cab Invoice Generator", path: "/invoice" },
     { label: "Contact & Online Desk", path: "/contact" },
   ];
 
@@ -146,7 +147,7 @@ export default function Footer() {
 
               <div className="flex items-start space-x-2.5">
                 <MapPin className="w-4 h-4 text-gold shrink-0 mt-0.5" />
-                <span>{contactConfig.address.full}</span>
+                <span>{contactConfig.address.full || contactConfig.address}</span>
               </div>
 
               <div className="flex items-center space-x-2.5">

@@ -16,6 +16,7 @@ import Sightseeing from './pages/Sightseeing';
 import About from './pages/About';
 import Contact from './pages/Contact';
 import BestTravelsInTirupati from './pages/BestTravelsInTirupati';
+import InvoiceGenerator from './pages/InvoiceGenerator';
 import NotFound from './pages/NotFound';
 
 // Scroll to top on route navigation
@@ -118,6 +119,18 @@ export default function App() {
             <Route
               path="/best-travels-in-tirupati"
               element={<BestTravelsInTirupati onOpenBooking={handleOpenBooking} />}
+            />
+            <Route
+              path="/invoice"
+              element={<InvoiceGenerator />}
+            />
+            <Route
+              path="/invoice-generator"
+              element={<InvoiceGenerator />}
+            />
+            <Route
+              path="/admin/invoice"
+              element={<InvoiceGenerator />}
             />
             {/* Catch-all 404 fallback */}
             <Route

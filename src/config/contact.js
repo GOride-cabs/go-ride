@@ -16,7 +16,7 @@ export const contactConfig = {
   email: "Goridetirupaticab@gmail.com",
   
   // Real Client Location
-  address: "22-11-193, Gollavanigunta, Renigunta Road, Tirupati, Andhra Pradesh, India",
+  address: "M Complex, Chinthalachenu Rd, near RTC Busstand, Kothapalli, Tirupati, Andhra Pradesh 517501",
   operatingHours: "24/7 Cab & Pilgrimage Support Desk",
   
   // URL Helpers

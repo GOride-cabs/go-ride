@@ -165,7 +165,7 @@ export default function BestTravelsInTirupati({ onOpenBooking }) {
     "priceRange": "₹14 - ₹28 per km",
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": "22-11-193, Gollavanigunta, Renigunta Road",
+      "streetAddress": "M Complex, Chinthalachenu Rd, near RTC Busstand, Kothapalli",
       "addressLocality": "Tirupati",
       "addressRegion": "Andhra Pradesh",
       "postalCode": "517501",
